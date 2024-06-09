@@ -12,14 +12,25 @@ const App = () => {
 }
 
 const NetflexSeries = ()=>{
+
+  const name = "Quenn of Tears"
+  const rating = "8.3"
+  const summary = "  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis eaque voluptates mollitia quis quidem dicta sapiente sit aliquid consequatur id, fugit assumenda quaerat tenetur, repellat ipsum, deleniti quod eligendi enim."
+
+const returnGenera = ()=>{
+  const genera = "RomCom"
+  return genera
+}
+
   return(
     <>
-    <div>
+    <div className="side">
     <img src="bg.png" alt="" width="30%" height="30%"/>
   </div>
-  <h2>Name: Quen of Tears</h2>
-  <h3>Rating: 8.2</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis eaque voluptates mollitia quis quidem dicta sapiente sit aliquid consequatur id, fugit assumenda quaerat tenetur, repellat ipsum, deleniti quod eligendi enim.</p>
+  <h2>Name: {name}</h2>
+  <h3>Rating: {rating}</h3>
+  <p>Summary: {summary}</p>
+  <p>Genera:{returnGenera()}</p>
   </>
   )
 
