@@ -127,3 +127,4 @@ dist
 .pnp.*
 NetflixSeriesBeforeMap.jsx
 NetflixSeriesUpToTut13.jsx
+.vercel
