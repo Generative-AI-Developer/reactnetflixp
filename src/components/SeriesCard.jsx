@@ -1,4 +1,3 @@
-import { border } from "@chakra-ui/react"
 
 
 export const SeriesCard = ({data})=>{
