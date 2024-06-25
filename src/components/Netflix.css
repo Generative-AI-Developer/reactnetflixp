@@ -23,3 +23,19 @@
     /* gap: 1.2rem; */
     font-size: medium;
 }
+
+.supper-hit{
+    background: #2caa1b;
+}
+
+.average{
+    background: #dbd13d;
+}
+
+
+.rating{
+    padding: 0.3rem 1.8rem;
+    color: #000;
+    margin-left: 1.2rem;
+    border-radius: 100rem;
+}

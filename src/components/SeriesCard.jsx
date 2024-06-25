@@ -8,9 +8,28 @@ export const SeriesCard = ({data})=>{
     padding: "1.2rem 2.4rem",
     border:"none",
     fontSize: "1.6rem",
-    backgroundColor: "blue",
-    color: "white"
+    backgroundColor: `${rating>= 8.5 ? "#2caa1b" : "#dbd13d"}`,
+    color: "black",
+    borderRadius: "14px",
+    fontWeight: "bold",
+
+    // const Button = style.button`
+    // padding: "1.2rem 2.4rem";
+    // border:"none";
+    // fontSize: "1.6rem";
+    // background-color: `${rating>= 8.5 ? "#2caa1b" : "#dbd13d"}`;
+    // color: "black";
+    // borderRadius: "14px";
+    // fontWeight: "bold";
+
+    // `
+
+
+
+   
   }
+
+  const ratingClass = rating >= 8.5? "supper-hit": "average"
 
     return(
         <li className="card">
@@ -19,7 +38,7 @@ export const SeriesCard = ({data})=>{
         </div> 
         <div className="card-content">
         <h2>Name: {name}</h2>
-        <h3>Rating: {rating}</h3>
+        <h3>Rating: <span className={`rating ${ratingClass}`}> {rating}</span></h3>
         <p>Summary: {description}</p>
         <p>Genera:{genre}</p>
         <p>Cast: {cast}</p>
