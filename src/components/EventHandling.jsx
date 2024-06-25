@@ -1,7 +1,14 @@
     
     
     export const EventHandling = ()=>{
-      function handleButtonClick(){
+
+
+      function handleButtonClick(event){
+        console.log(event)
+        console.log(event.target)
+        console.log(event.type)
+
+
         alert("I am onclick Event")
       }
 
